@@ -124,7 +124,7 @@ def predictions(p,s,E, name):
 
 #get the data from the txt file
 print("Getting data from txt file, please wait...")
-data=pd.read_csv("text2.txt", sep=" ", header= None, low_memory=False)
+data=pd.read_csv("data.txt", sep=" ", header= None, low_memory=False)
 data.columns = ["source", "target", "timestamp"]
 tmax=data['timestamp'].max()
 tmin=data['timestamp'].min()
